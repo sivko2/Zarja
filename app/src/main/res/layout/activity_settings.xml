@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" Settings"
+        android:id="@+id/titleView"
+        android:background="@android:color/holo_orange_light"
+        android:allowUndo="true"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/empty1View" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" Left handed (app restart needed)"
+        android:id="@+id/text1View"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leftHandedBox"
+        android:checked="false"
+        android:layout_gravity="right"
+        android:foregroundTint="@android:color/holo_orange_dark"
+        android:buttonTint="@android:color/holo_orange_dark"
+        android:drawableTint="@android:color/holo_orange_dark"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/empty2View" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" Moving speed"
+        android:id="@+id/text2View"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:max="2"
+        android:progressTint="@android:color/holo_orange_dark"
+        android:thumbTint="@android:color/holo_orange_dark"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=" Slow"
+            android:id="@+id/slowView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Fast "
+            android:id="@+id/fastView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Medium"
+            android:id="@+id/mediumView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/empty3View"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Vibrate on tap"
+        android:id="@+id/text3View"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hapticBox"
+        android:layout_gravity="right"
+        android:checked="false"
+        android:singleLine="true"
+        android:layout_marginRight="20dp"
+        android:buttonTint="@android:color/holo_orange_dark"
+        android:drawableTint="@android:color/holo_orange_dark"
+        android:foregroundTint="@android:color/holo_orange_dark" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/empty4View"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sound on launch"
+        android:id="@+id/soundView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/soundBox"
+        android:layout_gravity="right"
+        android:checked="false"
+        android:layout_marginRight="20dp"
+        android:drawableTint="@android:color/holo_orange_dark"
+        android:foregroundTint="@android:color/holo_orange_dark"
+        android:buttonTint="@android:color/holo_orange_dark"
+        android:allowUndo="false" />
+
+    <TextView
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/empty5View"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset app launch counters"
+        android:id="@+id/resetButton"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
