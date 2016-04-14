@@ -1,5 +1,6 @@
 PROJECT ZARJA: Single-hand App Launcher
 for Google Experiments
+License: GNU General Public License, version 3 (GPL-3.0)
 
 Launch apps on your Android phone with a single hand.
 
